@@ -19,6 +19,6 @@ public class RabbitListenner {
 
     @RabbitListener(queues = "myQueue2")
     public void processMyQueue2(String message) {
-        logger.info("Recieved second from myQueue: {}", message);
+        logger.info("Received second from myQueue: {}", message);
     }
 }
